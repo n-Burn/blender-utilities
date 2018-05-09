@@ -12,7 +12,7 @@ and counting backwards.
 Notes: 
 Must be run in Edit Mode
 Launched from space bar menu by typing in: Show Edge Depth
-based off of Blender's "find_adjacent.py"
+Based off of Blender's "find_adjacent.py"
 """
 
 import bpy
@@ -23,7 +23,7 @@ from mathutils import Vector
 from bpy_extras import view3d_utils
 from bpy_extras.view3d_utils import location_3d_to_region_2d as loc3d_to_reg2d
 
-print("\nadd-on loaded.")
+print("\nadd-on loaded.")  # debug
 
 
 class Colr:
@@ -40,7 +40,6 @@ class Colr:
 
 
 def draw_text(text, size, colr, pos):
-    # draw text
     dpi = 72
     font_id = 0
     blf.size(font_id, size, dpi)
