@@ -1,5 +1,16 @@
+"""
 # Edge Depth Test
 # show_edge_depth.py
+
+Description:
+Shows "depth" for each vertex in a mesh. The "depth" is calculated in terms of 
+the minimum number of edges needed to reach each vertex starting from the 
+selected geometry elements (verts, edges, or faces). Edge depths are shown 
+for up to 4 selected elements starting with the most recently selected element 
+and counting backwards.
+
+Note: must be run in Edit Mode
+"""
 
 import bpy
 import bmesh
