@@ -23,6 +23,16 @@ from mathutils import Vector
 from bpy_extras import view3d_utils
 from bpy_extras.view3d_utils import location_3d_to_region_2d as loc3d_to_reg2d
 
+bl_info = {
+    "name": "Show Edge Depth",
+    "author": "nBurn",
+    "location": "View3D > Spacebar Menu",
+    "version": (0, 0, 0),
+    "blender": (2, 7, 7),
+    "description": "Show vert edge depths",
+    "wiki_url": "",
+    "category": "Mesh"}
+
 print("\nadd-on loaded.")  # debug
 
 
