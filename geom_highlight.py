@@ -103,7 +103,7 @@ class ObjectTracker:
 
             # draw faces
             for f in obdat.faces:
-                inval = False
+                visible = True
                 v2d = []
                 verts = ob.data.polygons[f].vertices
                 for v in verts:
@@ -111,10 +111,10 @@ class ObjectTracker:
                     co3d = ob.matrix_world * vlocal
                     co2d = loc3d_to_reg2d(reg, rv3d, co3d)
                     if co2d is None:
-                        inval = True
+                        visible = False
                         break
                     v2d.append(co2d)
-                if inval is False:
+                if visible is True:
                     bgl.glEnable(bgl.GL_BLEND)
                     bgl.glColor4f(*self.face_colr)
                     bgl.glBegin(bgl.GL_POLYGON)
@@ -124,7 +124,7 @@ class ObjectTracker:
 
             # draw edges
             for e in obdat.edges:
-                inval = False
+                visible = True
                 v2d = []
                 verts = ob.data.edges[e].vertices
                 for v in verts:
@@ -132,10 +132,10 @@ class ObjectTracker:
                     co3d = ob.matrix_world * vlocal
                     co2d = loc3d_to_reg2d(reg, rv3d, co3d)
                     if co2d is None:
-                        inval = True
+                        visible = False
                         break
                     v2d.append(co2d)
-                if inval is False:
+                if visible is True:
                     bgl.glEnable(bgl.GL_BLEND)
                     bgl.glLineWidth(3)
                     bgl.glColor4f(*self.edge_colr)
