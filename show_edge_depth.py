@@ -28,7 +28,7 @@ bl_info = {
     "author": "nBurn",
     "location": "View3D > Spacebar Menu",
     "version": (0, 0, 0),
-    "blender": (2, 7, 7),
+    "blender": (2, 77, 0),
     "description": "Show vert edge depths",
     "wiki_url": "",
     "category": "Mesh"}
