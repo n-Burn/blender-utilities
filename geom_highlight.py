@@ -25,7 +25,7 @@ bl_info = {
     "author": "nBurn",
     "location": "View3D > Spacebar Menu",
     "version": (0, 0, 0),
-    "blender": (2, 7, 7),
+    "blender": (2, 77, 0),
     "description": "Highlights listed mesh geometry indexes",
     "wiki_url": "",
     "category": "Mesh"}
