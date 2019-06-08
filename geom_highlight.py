@@ -192,7 +192,7 @@ class GeometryHighlighter(bpy.types.Operator):
         elif event.type == 'DOWN_ARROW' and event.value == 'RELEASE':
             self.active = (self.active - 1) % len(self.objects)
 
-        elif self.force_quit is True:
+        elif self.force_quit:
             print("add-on stopped.\n")
             bpy.types.SpaceView3D.draw_handler_remove(self._handle, 'WINDOW')
             return {'CANCELLED'}
