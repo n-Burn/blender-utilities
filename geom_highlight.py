@@ -114,7 +114,7 @@ class ObjectTracker:
                         visible = False
                         break
                     v2d.append(co2d)
-                if visible is True:
+                if visible:
                     bgl.glEnable(bgl.GL_BLEND)
                     bgl.glColor4f(*self.face_colr)
                     bgl.glBegin(bgl.GL_POLYGON)
@@ -135,7 +135,7 @@ class ObjectTracker:
                         visible = False
                         break
                     v2d.append(co2d)
-                if visible is True:
+                if visible:
                     bgl.glEnable(bgl.GL_BLEND)
                     bgl.glLineWidth(3)
                     bgl.glColor4f(*self.edge_colr)
